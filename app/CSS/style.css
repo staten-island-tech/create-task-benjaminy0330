@@ -18,6 +18,14 @@ body{
     padding-bottom: 2rem;
 }
 
+.buttons{
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;
