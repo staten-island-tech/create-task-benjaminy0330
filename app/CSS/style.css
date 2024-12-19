@@ -37,7 +37,7 @@ body{
 }
 
 .card{
-    width: 40rem;
+    width: 50rem;
     text-align: center;
     padding-bottom: 2rem;
     margin: 1rem;
@@ -49,4 +49,20 @@ body{
   
 .name{
     font-size: 3rem;
+}
+
+.cart{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 5rem;
+    margin: auto;
+
+    text-align: center;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    background-color: grey;
+    border-radius: 1rem;
+    color: white;
 }
