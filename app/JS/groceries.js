@@ -1,11 +1,11 @@
 const groceries =
 [
-    { name: "Milk", price: "$3.49", type: "Dairy" },
-    { name: "Bread", price: "$2.99", type: "Grain" },
-    { name: "Eggs", price: "$4.29", type: "Protein" },
-    { name: "1 lb Apples", price: "$1.49", type: "Produce" },
-    { name: "1 lb Chicken Breast", price: "$6.99", type: "Protein" },
-    { name: "Rice", price: "$2.99", type: "Grain" },
+    { name: "Milk", price: 3.49, type: "Dairy" },
+    { name: "Bread", price: 2.99, type: "Grain" },
+    { name: "Eggs", price: 4.29, type: "Protein" },
+    { name: "1 lb Apples", price: 1.49, type: "Produce" },
+    { name: "1 lb Chicken Breast", price: 6.99, type: "Protein" },
+    { name: "Rice", price: 2.99, type: "Grain" },
     { name: "Cheddar Cheese", price: "$5.49", type: "Dairy" },
     { name: "1 lb Bananas", price: "$0.59", type: "Produce" },
     { name: " 1 lb Tomatoes", price: "$2.49", type: "Produce" },

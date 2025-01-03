@@ -153,6 +153,3 @@ document.querySelector(".Protein").addEventListener("click", function(){
 })
 })
 
-/*function calculate{
-    
-}*/
