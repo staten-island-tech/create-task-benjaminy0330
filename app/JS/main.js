@@ -9,7 +9,7 @@ groceries.forEach((grocery) => {
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         cardlocation.insertAdjacentHTML("beforeend", html)
@@ -25,7 +25,7 @@ document.querySelector(".all").addEventListener("click", function(){
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         
@@ -45,7 +45,7 @@ document.querySelector(".Beverage").addEventListener("click", function(){
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         
@@ -65,7 +65,7 @@ document.querySelector(".Dairy").addEventListener("click", function(){
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         
@@ -85,7 +85,7 @@ document.querySelector(".Grain").addEventListener("click", function(){
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         
@@ -104,7 +104,7 @@ document.querySelector(".Pantry").addEventListener("click", function(){
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         
@@ -123,7 +123,7 @@ document.querySelector(".Produce").addEventListener("click", function(){
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         
@@ -133,7 +133,6 @@ document.querySelector(".Produce").addEventListener("click", function(){
 })
 
 //protein
-
 document.querySelector(".Protein").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
     const protein = groceries.filter(grocery => grocery.type.includes("Protein"));
@@ -144,7 +143,7 @@ document.querySelector(".Protein").addEventListener("click", function(){
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
-            <button>Add to bag</button>
+            <button class = "add">Add to bag</button>
         </div>
         `;
         
@@ -153,3 +152,15 @@ document.querySelector(".Protein").addEventListener("click", function(){
 })
 })
 
+/*
+1. Upon load, display "No items in bag"
+2. After "add to bag" is clicked, add it to bag
+3. Calculate prices and display at the bottom
+*/
+
+/* function  calculator {
+
+
+
+}
+*/
