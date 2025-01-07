@@ -2,7 +2,7 @@ import "../CSS/style.css"
 import { groceries } from "./groceries";
 
 const cardlocation = document.getElementById("cards");
-//default
+
 groceries.forEach((grocery) => {
         const html = `
         <div class = "card">
@@ -34,7 +34,7 @@ document.querySelector(".all").addEventListener("click", function(){
 })
 })
 
-//beverage
+
 document.querySelector(".Beverage").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
     const beverage = groceries.filter(grocery => grocery.type.includes("Beverage"));
@@ -53,7 +53,7 @@ document.querySelector(".Beverage").addEventListener("click", function(){
         
 })
 })
-//dairy
+
 document.querySelector(".Dairy").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
     const dairy = groceries.filter(grocery => grocery.type.includes("Dairy"));
@@ -73,7 +73,7 @@ document.querySelector(".Dairy").addEventListener("click", function(){
         
 })
 })
-//grain
+
 document.querySelector(".Grain").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
     const grain = groceries.filter(grocery => grocery.type.includes("Grain"));
@@ -93,7 +93,7 @@ document.querySelector(".Grain").addEventListener("click", function(){
         
 })
 })
-//pantry
+
 document.querySelector(".Pantry").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
     const pantry = groceries.filter(grocery => grocery.type.includes("Pantry"));
@@ -112,7 +112,7 @@ document.querySelector(".Pantry").addEventListener("click", function(){
         
 })
 })
-//produce
+
 document.querySelector(".Produce").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
     const produce = groceries.filter(grocery => grocery.type.includes("Produce"));
@@ -132,7 +132,7 @@ document.querySelector(".Produce").addEventListener("click", function(){
 })
 })
 
-//protein
+
 document.querySelector(".Protein").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
     const protein = groceries.filter(grocery => grocery.type.includes("Protein"));

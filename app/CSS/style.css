@@ -9,6 +9,7 @@ html, body, *{
 
 body{
     background-color: rgb(160, 223, 160);
+    font-family: "Outfit", serif;
 }
 .title{
     font-size: 5rem;
@@ -24,6 +25,7 @@ body{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
+    font-family: "Outfit", serif;
 }
 
 .cards{
@@ -43,7 +45,7 @@ body{
     padding-bottom: 2rem;
     margin: 1rem;
     background-color: grey;
-    border-radius: 1rem;
+    border-radius: 1.3rem;
     color: white;
     
 }
@@ -58,10 +60,10 @@ body{
     justify-content: space-around;
     font-size: 5rem;
     margin: auto;
-    width: 60rem;
+    width: 80rem;
     text-align: center;
-    background-color: rgb(204, 138, 77);
-    border-radius: 1rem;
+    background-color: rgb(202, 145, 98);
+    border-radius: 3rem;
     color: white;
     padding: 2rem;
     
