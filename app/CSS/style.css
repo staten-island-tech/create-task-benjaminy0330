@@ -63,8 +63,8 @@ body{
     width: 80rem;
     text-align: center;
     background-color: rgb(202, 145, 98);
-    border-radius: 3rem;
+    border-radius: 0.5rem;
     color: white;
     padding: 2rem;
-    
+    background-image: url(https://as1.ftcdn.net/v2/jpg/00/25/73/70/1000_F_25737085_z4BH6LVUOeg8KEqdZvdVbh0CW9u9xjbm.jpg);
 }
