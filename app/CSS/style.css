@@ -8,7 +8,7 @@ html, body, *{
 
 
 body{
-    background-color: rgb(160, 223, 160);
+    background-color: rgb(147, 218, 140);
     font-family: "Outfit", serif;
 }
 .title{
@@ -26,6 +26,7 @@ body{
     margin-right: 2rem;
     margin-bottom: 2rem;
     font-family: "Outfit", serif;
+    border-radius: 0.25rem;
 }
 
 .cards{
@@ -60,11 +61,11 @@ body{
     justify-content: space-around;
     font-size: 5rem;
     margin: auto;
-    width: 80rem;
+    width: 90rem;
     text-align: center;
     background-color: rgb(202, 145, 98);
     border-radius: 0.5rem;
-    color: white;
+    color: rgb(139, 37, 37);
     padding: 2rem;
     background-image: url(https://as1.ftcdn.net/v2/jpg/00/25/73/70/1000_F_25737085_z4BH6LVUOeg8KEqdZvdVbh0CW9u9xjbm.jpg);
 }
@@ -73,4 +74,10 @@ body{
     font-size: 5rem;
     text-align: center;
     padding-top: 2rem;
+}
+
+.bag{
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
 }
