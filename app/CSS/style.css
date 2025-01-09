@@ -68,3 +68,9 @@ body{
     padding: 2rem;
     background-image: url(https://as1.ftcdn.net/v2/jpg/00/25/73/70/1000_F_25737085_z4BH6LVUOeg8KEqdZvdVbh0CW9u9xjbm.jpg);
 }
+
+.total{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
