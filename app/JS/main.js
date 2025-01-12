@@ -67,6 +67,7 @@ document.querySelector(".all").addEventListener("click", function(){
         cardlocation.insertAdjacentHTML("beforeend", html)
         
 })
+attachAddToCartListeners(groceries);
 })
 
 
