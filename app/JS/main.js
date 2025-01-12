@@ -1,6 +1,6 @@
 import "../CSS/style.css"
 import { groceries } from "./groceries";
-////
+
 const cardlocation = document.getElementById("cards");
 let totalPrice = 0;
 
@@ -22,16 +22,18 @@ function updateCart(itemName, itemPrice) {
 }
 
 
-function attachAddToCartListeners() {
-  const addButtons = document.querySelectorAll(".add");
-
-  addButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      const item = groceries[index]; 
-      updateCart(item.name, item.price);
+function attachAddToCartListeners(filteredGroceries) {
+    const addButtons = document.querySelectorAll(".add");
+  
+    addButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        const item = filteredGroceries[index]; 
+        updateCart(item.name, item.price);
+      });
     });
-  });
 }
+  
+
 
 
 groceries.forEach((grocery) => {
@@ -44,8 +46,9 @@ groceries.forEach((grocery) => {
     </div>
   `;
   cardlocation.insertAdjacentHTML("beforeend", html);
+  
 });
-
+attachAddToCartListeners(groceries);
 
 
 document.querySelector(".all").addEventListener("click", function(){
@@ -67,24 +70,25 @@ document.querySelector(".all").addEventListener("click", function(){
 })
 
 
-document.querySelector(".Beverage").addEventListener("click", function(){
-    document.querySelector(".cards").innerHTML ="";
+document.querySelector(".Beverage").addEventListener("click", function () {
+    document.querySelector(".cards").innerHTML = ""; 
     const beverage = groceries.filter(grocery => grocery.type.includes("Beverage"));
-
+  
     beverage.forEach((grocery) => {
-        const html = `
+      const html = `
         <div class = "card">
             <h2 class ="name">${grocery.name}</h2>
             <h2 class = "origin">${grocery.type}</h2>
             <h2>${grocery.price}</h2>
             <button class = "add">Add to bag</button>
         </div>
-        `;
-        
-        cardlocation.insertAdjacentHTML("beforeend", html)
-        
-})
-})
+      `;
+      cardlocation.insertAdjacentHTML("beforeend", html);
+    });
+  
+    attachAddToCartListeners(beverage); 
+  });
+  
 
 document.querySelector(".Dairy").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
@@ -102,9 +106,9 @@ document.querySelector(".Dairy").addEventListener("click", function(){
         `;
         
         cardlocation.insertAdjacentHTML("beforeend", html)
-        
-})
-})
+    });
+    attachAddToCartListeners(dairy);
+    });
 
 document.querySelector(".Grain").addEventListener("click", function(){
     document.querySelector(".cards").innerHTML ="";
@@ -124,6 +128,7 @@ document.querySelector(".Grain").addEventListener("click", function(){
         cardlocation.insertAdjacentHTML("beforeend", html)
         
 })
+attachAddToCartListeners(grain);
 })
 
 document.querySelector(".Pantry").addEventListener("click", function(){
@@ -143,6 +148,7 @@ document.querySelector(".Pantry").addEventListener("click", function(){
         cardlocation.insertAdjacentHTML("beforeend", html)
         
 })
+attachAddToCartListeners(pantry);
 })
 
 document.querySelector(".Produce").addEventListener("click", function(){
@@ -162,6 +168,7 @@ document.querySelector(".Produce").addEventListener("click", function(){
         cardlocation.insertAdjacentHTML("beforeend", html)
         
 })
+attachAddToCartListeners(produce);
 })
 
 
@@ -182,6 +189,6 @@ document.querySelector(".Protein").addEventListener("click", function(){
         cardlocation.insertAdjacentHTML("beforeend", html)
         
 })
+attachAddToCartListeners(protein);
 })
 
-attachAddToCartListeners();
